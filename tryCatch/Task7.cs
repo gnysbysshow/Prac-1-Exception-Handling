@@ -50,6 +50,10 @@ namespace tryCatch
             {
                 Console.WriteLine("Ошибка: деление на ноль!");
             }
+            catch (OverflowException)
+            {
+                Console.WriteLine("Ошибка: число слишком большое!");
+            }
             catch
             {
                 Console.WriteLine("Произошла ошибка!");

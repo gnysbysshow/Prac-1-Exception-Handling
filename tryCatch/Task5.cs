@@ -19,14 +19,15 @@ namespace tryCatch
 
                 for (int i = 0; i < size; i++)
                 {
-                    Console.Write($"Введите элемент {i}: ");
+                    Console.Write($"[{i}]: ");
                     array[i] = int.Parse(Console.ReadLine());
                 }
 
                 int sum = 0;
                 foreach (int num in array)
+                {
                     sum += num;
-
+                }
                 Console.WriteLine($"Сумма элементов: {sum}");
             }
             catch (FormatException)
@@ -37,7 +38,7 @@ namespace tryCatch
             {
                 Console.WriteLine("Ошибка: число слишком большое!");
             }
-            catch (Exception)
+            catch
             {
                 Console.WriteLine("Произошла ошибка!");
             }
