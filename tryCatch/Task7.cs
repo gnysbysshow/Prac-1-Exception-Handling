@@ -8,7 +8,7 @@ namespace tryCatch
 {
     internal class Task7
     {
-        static void Main(string[] args)
+        static void Main0(string[] args)
         {
             try
             {
@@ -58,6 +58,7 @@ namespace tryCatch
             {
                 Console.WriteLine("Произошла ошибка!");
             }
+            finally { }
         }
     }
 }
